@@ -1,26 +1,25 @@
 import { Injectable } from '@nestjs/common';
-import { CreateAuthDto } from './dto/create-auth.dto';
-import { UpdateAuthDto } from './dto/update-auth.dto';
+import { AuthDto } from './dto/auth-dto';
+import { UserData } from 'data/Usersdata';
+
 
 @Injectable()
 export class AuthService {
-  create(createAuthDto: CreateAuthDto) {
-    return 'This action adds a new auth';
-  }
-
-  findAll() {
-    return `This action returns all auth`;
-  }
-
-  findOne(id: number) {
-    return `This action returns a #${id} auth`;
-  }
-
-  update(id: number, updateAuthDto: UpdateAuthDto) {
-    return `This action updates a #${id} auth`;
-  }
-
-  remove(id: number) {
-    return `This action removes a #${id} auth`;
+  auth(dto:AuthDto){
+      for(let i: number; i < UserData.length; i++){
+        if(UserData[i].name === dto.name){
+          if(UserData[i].password === dto.password){
+            return UserData[i]
+          }
+          return{
+            status: "139",
+            data: "password not found"
+          }
+        }
+        return {
+            status: "159",
+            data: "UserName not found"
+        }
+      }
   }
 }
