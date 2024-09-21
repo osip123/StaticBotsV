@@ -1,0 +1,11 @@
+.header{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    
+    div a{
+        padding: 6px;
+        border: .1px aliceblue;
+    }
+}

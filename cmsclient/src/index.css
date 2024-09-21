@@ -10,3 +10,8 @@ body, html {
   color: aliceblue;
   font-weight: 500;
 }
+
+:is(a){
+  text-decoration: none;
+  color: aliceblue;
+}
