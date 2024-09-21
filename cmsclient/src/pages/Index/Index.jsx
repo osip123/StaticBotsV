@@ -1,14 +1,17 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
+import { AuthContext } from '../../Providers/AuthProvider'
 
 const Index = () => {
 
-  // const [auth, setAuth] = useState({isAuth: false, name: "unknown"})
+  // const [user, setUser] = useContext(AuthContext)
 
   // console.log(auth)
 
   return (
+    <>
     <div>Index</div>
-  )
+
+    </>  )
 }
 
 export default Index

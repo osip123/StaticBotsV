@@ -1,6 +1,6 @@
 body, html {
   width: 100vw;
-  height: 100vw;
+  height: 100vh;
   background-color: #1f1f1f;
   margin: 0;
   padding: 0;
@@ -14,4 +14,9 @@ body, html {
 :is(a){
   text-decoration: none;
   color: aliceblue;
+  padding: 5px;
+}
+
+#root{
+  min-width: 1200px;
 }

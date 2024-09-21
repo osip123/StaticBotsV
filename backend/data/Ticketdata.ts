@@ -8,5 +8,12 @@ export let TicketData:Ticket[] = [
         Sername: "string",
         data: "string",
         hash: "string",
+    },
+    {
+        Name: "Osip",
+        Date: "12.09.21",
+        Sername: "string",
+        data: "string",
+        hash: "string",
     }
 ]
