@@ -92,8 +92,5 @@
     "exclude": [
       "**/*.spec.js"
     ]
-  },
-  "dependencies": {
-    "axios": "^1.7.7"
   }
 }

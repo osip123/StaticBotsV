@@ -1,2 +1,2 @@
-export * from './Client'
-export * from './PushData'
+export * from './services/Client'
+export * from './services/PushData'
